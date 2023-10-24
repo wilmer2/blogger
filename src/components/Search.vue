@@ -43,12 +43,18 @@ onMounted(() => {
       </span>
       <input class="ml-1" type="text" placeholder="Buscar entradas" v-model="textInput" />
     </div>
-    <span class="material-symbols-outlined letter-icon"> info </span>
+    <div>
+      <span class="material-symbols-outlined letter-icon"> info </span>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .input-container {
+  position: absolute;
+  top: -10px;
+  left: -13px;
+  /* left: 0; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,6 +72,7 @@ onMounted(() => {
 
 .input-arrow-container {
   display: flex;
+  overflow: hidden;
 }
 
 .search-container-btn {
@@ -100,6 +107,7 @@ input::placeholder {
 
 @media (width >= 600px) {
   .input-container {
+    position: static;
     margin: 0 auto;
     background-color: var(--bg-primary);
   }

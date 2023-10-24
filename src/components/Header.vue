@@ -5,17 +5,19 @@ import Avatar from './Avatar.vue'
 
 <template>
   <header>
-    <div class="header-menu">
-      <div>
-        <span class="material-symbols-outlined letter-icon"> menu </span>
+    <div class="header-menu-container">
+      <div class="header-menu">
+        <div>
+          <span class="material-symbols-outlined letter-icon"> menu </span>
+        </div>
+        <figure class="ml-1">
+          <img class="header-logo" src="@/assets/images/logo_blogger.png" alt="Blogger logo" />
+        </figure>
       </div>
-      <figure class="ml-1">
-        <img class="header-logo" src="@/assets/images/logo_blogger.png" alt="Blogger logo" />
-      </figure>
+      <Search />
     </div>
 
     <div class="header-interactive-container">
-      <Search />
       <Avatar />
     </div>
   </header>
@@ -23,13 +25,20 @@ import Avatar from './Avatar.vue'
 
 <style scoped>
 header {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.header-menu-container {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .header-menu {
@@ -44,8 +53,8 @@ header {
 
 .header-interactive-container {
   display: flex;
-  justify-content: flex-end;
-  flex: 1;
+  /* justify-content: flex-end; */
+  /* flex: 1; */
 }
 
 figure {
