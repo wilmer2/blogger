@@ -94,6 +94,10 @@ input::placeholder {
   opacity: 0.6;
 }
 
+.search-input {
+  display: none;
+}
+
 @media (width >= 600px) {
   .input-container {
     margin: 0 auto;
