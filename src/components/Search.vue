@@ -13,6 +13,10 @@ const changeSizeScreen = (): void => {
   }
 }
 
+const handleCleanText = (): void => {
+  textInput.value = ''
+}
+
 const handleShowInput = (): void => {
   visibleInput.value = true
 }
@@ -43,7 +47,16 @@ onMounted(() => {
       </span>
       <input class="ml-1" type="text" placeholder="Buscar entradas" v-model="textInput" />
     </div>
-    <div>
+
+    <div class="search-options">
+      <span
+        class="material-symbols-outlined letter-icon mr-1"
+        v-if="textInput"
+        @click="handleCleanText"
+      >
+        close
+      </span>
+
       <span class="material-symbols-outlined letter-icon"> info </span>
     </div>
   </div>
@@ -54,7 +67,6 @@ onMounted(() => {
   position: absolute;
   top: -10px;
   left: -13px;
-  /* left: 0; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,6 +97,10 @@ onMounted(() => {
   box-sizing: border-box;
 
   background: var(--bg-primary);
+}
+
+.search-options {
+  display: flex;
 }
 
 input {
