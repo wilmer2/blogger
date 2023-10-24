@@ -29,6 +29,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 60px;
+  padding-top: 10px;
   padding-left: 12px;
   padding-right: 12px;
 }

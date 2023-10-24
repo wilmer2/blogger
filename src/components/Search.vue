@@ -65,7 +65,7 @@ onMounted(() => {
 <style scoped>
 .input-container {
   position: absolute;
-  top: -10px;
+  top: -12px;
   left: -13px;
   display: flex;
   align-items: center;
@@ -123,7 +123,7 @@ input::placeholder {
 
 @media (width >= 600px) {
   .input-container {
-    position: static;
+    position: initial;
     margin: 0 auto;
     background-color: var(--bg-primary);
   }
