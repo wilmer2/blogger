@@ -1,8 +1,17 @@
 <script setup lang="ts">
-import { ref, type Ref } from 'vue'
+import { ref, type Ref, onMounted } from 'vue'
 
 const visibleInput: Ref<boolean> = ref(false)
 const textInput: Ref<string> = ref('')
+const responsive = window.matchMedia('(min-width: 600px)')
+
+const changeSizeScreen = (): void => {
+  if (responsive.matches) {
+    visibleInput.value = true
+  } else {
+    visibleInput.value = false
+  }
+}
 
 const handleShowInput = (): void => {
   visibleInput.value = true
@@ -12,6 +21,12 @@ const handleHideInput = (): void => {
   visibleInput.value = false
   textInput.value = ''
 }
+
+responsive.addEventListener('change', changeSizeScreen)
+
+onMounted(() => {
+  changeSizeScreen()
+})
 </script>
 
 <template>
@@ -21,7 +36,9 @@ const handleHideInput = (): void => {
 
   <div class="input-container" v-else="visibleInput">
     <div class="input-arrow-container">
-      <span class="material-symbols-outlined letter-icon" @click="handleHideInput">
+      <span class="material-symbols-outlined letter-icon search-input"> search </span>
+
+      <span class="material-symbols-outlined letter-icon arrow-input" @click="handleHideInput">
         arrow_back
       </span>
       <input class="ml-1" type="text" placeholder="Buscar entradas" v-model="textInput" />
@@ -79,7 +96,16 @@ input::placeholder {
 
 @media (width >= 600px) {
   .input-container {
+    margin: 0 auto;
     background-color: var(--bg-primary);
+  }
+
+  .arrow-input {
+    display: none;
+  }
+
+  .search-input {
+    display: block;
   }
 }
 </style>

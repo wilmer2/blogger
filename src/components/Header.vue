@@ -55,6 +55,7 @@ figure {
 @media (width >= 600px) {
   figure {
     display: block;
+    margin-right: 16px;
   }
 }
 </style>
