@@ -54,8 +54,6 @@ header {
 
 .header-interactive-container {
   display: flex;
-  /* justify-content: flex-end; */
-  /* flex: 1; */
 }
 
 figure {
@@ -66,6 +64,13 @@ figure {
   figure {
     display: block;
     margin-right: 16px;
+  }
+}
+
+@media (width >= 720px) {
+  header {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 </style>
