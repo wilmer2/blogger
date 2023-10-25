@@ -126,6 +126,7 @@ input::placeholder {
     position: initial;
     margin: 0 auto;
     background-color: var(--bg-primary);
+    box-shadow: initial;
   }
 
   .arrow-input {
