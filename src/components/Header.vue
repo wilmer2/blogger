@@ -29,9 +29,8 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding-top: 10px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
 }
 
 .header-menu-container {
@@ -69,8 +68,8 @@ figure {
 
 @media (width >= 720px) {
   header {
-    padding-left: 16px;
-    padding-right: 16px;
+    height: auto;
+    padding: 10px 16px;
   }
 }
 </style>
