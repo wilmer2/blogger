@@ -1,7 +1,10 @@
 :root {
   --bg-primary: #eceff1;
   --gray-color: #a8abac;
+  --gray-ligth-color: #b4b4b4;
   --font-medium: 16px;
+  --primary-color: #f8a147;
+  --border-color: rgba(0, 0, 0, 0.12);
 }
 
 *,
@@ -27,7 +30,19 @@ h4,
 h5,
 h6,
 p,
-figure {
+figure,
+ul {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: initial;
 }
