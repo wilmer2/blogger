@@ -124,4 +124,22 @@ figure {
   padding-left: 16px;
   margin-bottom: 30px;
 }
+
+@media (width >= 1024px) {
+  figure {
+    display: none;
+  }
+
+  .sidebar-container {
+    position: initial;
+    width: 280px;
+    border-right: 1px solid var(--border-color);
+    max-height: none;
+    box-shadow: 0 0;
+  }
+
+  .select-container {
+    padding-top: 20px;
+  }
+}
 </style>
