@@ -131,10 +131,10 @@ figure {
   }
 
   .sidebar-container {
-    position: initial;
+    top: 70px;
     width: 280px;
     border-right: 1px solid var(--border-color);
-    max-height: none;
+    max-height: calc(100vh - 80px);
     box-shadow: 0 0;
   }
 
