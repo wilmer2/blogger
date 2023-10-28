@@ -4,7 +4,7 @@
 import Header from './components/Header.vue'
 import Sidebar from './components/Sidebar.vue'
 import Container from './components/Container.vue'
-import Card from './components/Card.vue'
+import CardList from './components/CardList.vue'
 </script>
 
 <template>
@@ -12,8 +12,7 @@ import Card from './components/Card.vue'
   <!-- <Sidebar /> -->
 
   <Container>
-    <Card />
-    <Card />
+    <CardList />
   </Container>
 
   <!-- <RouterView /> -->
