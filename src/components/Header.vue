@@ -30,7 +30,7 @@ header {
   align-items: center;
   height: 60px;
   padding: 10px 12px;
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header-menu-container {
