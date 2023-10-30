@@ -110,4 +110,14 @@ img {
     padding-right: 8px;
   }
 }
+
+@media (width >= 768px) {
+  .comment-container:hover :deep(.option-icon-container) {
+    display: flex;
+  }
+
+  .comment-container:hover .comment-date-container {
+    display: none;
+  }
+}
 </style>
