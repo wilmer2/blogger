@@ -9,7 +9,7 @@ import CardList from './components/CardList.vue'
 
 <template>
   <Header />
-  <!-- <Sidebar /> -->
+  <Sidebar />
 
   <Container>
     <CardList />

@@ -47,7 +47,7 @@ const handleAddTag = (): void => {
 }
 
 .filter-label {
-  color: #00838f;
+  color: var(--green-color);
   font-size: 14px;
   font-weight: 500;
 }
