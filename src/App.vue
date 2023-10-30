@@ -4,15 +4,15 @@
 import Header from './components/Header.vue'
 import Sidebar from './components/Sidebar.vue'
 import Container from './components/Container.vue'
-import CardList from './components/CardList.vue'
+import CommentCard from './components/CommentCard.vue'
 </script>
 
 <template>
   <Header />
-  <Sidebar />
+  <!-- <Sidebar /> -->
 
   <Container>
-    <CardList />
+    <CommentCard />
   </Container>
 
   <!-- <RouterView /> -->
