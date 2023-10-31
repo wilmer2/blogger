@@ -33,7 +33,7 @@ import CommentCardMenu from './CommentCardMenu.vue'
 
 <style scoped>
 .main-container {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding: 16px;
   border: 1px solid var(--border-color);
   border-radius: 6px;
