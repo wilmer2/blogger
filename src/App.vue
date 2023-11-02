@@ -2,16 +2,13 @@
 // import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
-import Sidebar from './components/Sidebar.vue'
-import Container from './components/Container.vue'
-
-import ContentList from './components/ContentList.vue'
-import CommentCard from './components/CommentCard.vue'
+import Input from './components/Input.vue'
 </script>
 
 <template>
   <Header />
-  <Sidebar />
+  <Input />
+  <!-- <Sidebar />
 
   <Container>
     <ContentList>
@@ -19,7 +16,7 @@ import CommentCard from './components/CommentCard.vue'
       <CommentCard />
       <CommentCard />
     </ContentList>
-  </Container>
+  </Container> -->
 
   <!-- <RouterView /> -->
 </template>
