@@ -2,12 +2,13 @@
 // import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
-import Input from './components/Input.vue'
+import Button from './components/Button.vue'
+import Post from './components/Post.vue'
 </script>
 
 <template>
   <Header />
-  <Input />
+  <Post />
   <!-- <Sidebar />
 
   <Container>

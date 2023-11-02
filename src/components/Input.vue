@@ -29,7 +29,7 @@ const handleActiveLabel = (): void => {
   </div>
 </template>
 
-<style>
+<style scoped>
 .input-container {
   height: 24px;
   width: 100%;
